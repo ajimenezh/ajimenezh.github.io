@@ -305,7 +305,7 @@ Using this data structure, we finally obtain a working solution that will play t
 
 While doing this I realized than in Java array copying is very slow, so instead of this, I used NDK to write the copy functions in C++ improving the performance a lot.
 
-{% highlight C++ %}
+{% highlight cpp %}
 
 JNIEXPORT void JNICALL
 Java_com_example_alex_audiostream_JNIWrapper_copybyteArrayJni(JNIEnv *env, jobject obj, jbyteArray arr, jbyteArray buf)
@@ -335,7 +335,7 @@ Java_com_example_alex_audiostream_JNIWrapper_copyByteArrayModularJni(JNIEnv *env
     (*env)->ReleaseByteArrayElements(env, to, b, 0);
 }
 
-{% highlight %}
+{% endhighlight %}
 
 This functions substitute the array copying implemented in the read and resize in the SharedQueue.
 
