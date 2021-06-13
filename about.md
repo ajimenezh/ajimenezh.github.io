@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-TODO
+### Contact me
+
+[alejandrojh90@gmail.com](mailto:alejandrojh90l@gmail.com)
