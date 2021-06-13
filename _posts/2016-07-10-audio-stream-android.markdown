@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: archive
 title:  "Audio streaming in android. Part 1"
 date:   2016-07-10 13:42:41 +0100
-categories: 
+visible: false
 ---
 
 I want to build an android app to stream songs from one device to another, with a server in between. To do this, the method I'm going to use is when you pick a song to stream, the app divides the song in frames and send them to the server with a socket, the the server send the data to each client that want to listen to the song, and in the app I decode the frames into PCM and use AudioTrack to play the audio. I'm going to use AudioTrack instead of the usual MediaPlayer because of the latency to change from one fragment of audio to another.

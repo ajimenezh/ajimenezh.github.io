@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: archive
 title: Flat Plate under Supersonic Flow
 visible: 1
 ---

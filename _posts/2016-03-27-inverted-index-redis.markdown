@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: archive
 title:  "Similarity with inverted index in Redis"
 date:   2016-03-27 13:42:41 +0100
 categories: 
+visible: 1
 ---
 
 One of the most common measure of similarity between two users that have a vector representation of the likes and dislikes, is to count the amount of items they have in common an apply some formula. But this method requires to iterate over all users in order to rank them. Another solution is to build an inverted index with the liked items, so we can search over all users that have at least one element in common, this way in most cases we can reduce the number of users over which we have to iterate.

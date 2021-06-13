@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: archive
 title:  "Music content-based filtering recommendation"
 date:   2016-03-22 13:42:41 +0100
 categories: 
+visible: 1
 ---
 
 In a content-based recommender system, we use attributes to describe the items and use these attributes to calculate how similar are two items. With this we can rank other items on how similar they are and recommend the most similar ones. This algorithm recommend items similar to the items of the user, without using information about the action of other users.
